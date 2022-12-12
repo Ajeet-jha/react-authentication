@@ -10,11 +10,13 @@ export const userReducer = (state = initialState, action) => {
 	switch (type) {
 		case types.LOG_IN:
 			return {
+				...state,
 				user: payload,
 			};
 
 		case types.LOG_OUT:
 			return {
+				...state,
 				user: null,
 			};
 

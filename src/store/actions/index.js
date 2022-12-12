@@ -1,8 +1,8 @@
 import * as types from './types';
 
-export const login = (data) => ({
+export const login = (user) => ({
 	type: types.LOG_IN,
-	payload: data,
+	payload: user,
 });
 
 export const logout = () => ({

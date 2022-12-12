@@ -1,4 +1,4 @@
-import User from '../containers/User';
+import User from '../components/User';
 
 function UserPage() {
 	return <User />;

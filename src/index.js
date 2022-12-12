@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import router from './routes';
+import { Auth0Provider } from '@auth0/auth0-react';
 import { store } from './store';
 import App from './App';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
 	<React.StrictMode>
 		<Provider store={store}>
-			<RouterProvider router={router}>
+			<Auth0Provider
+				domain="ajeet-jha.us.auth0.com"
+				clientId="mRVa6gkGmdKAOxLHKaWsfHCfmG1DC4nm"
+				redirectUri={window.location.origin}
+			>
 				<App />
-			</RouterProvider>
+			</Auth0Provider>
 		</Provider>
 	</React.StrictMode>
 );

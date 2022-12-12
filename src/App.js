@@ -4,7 +4,7 @@ import Layout from './components/Layout';
 
 function App() {
 	return (
-		<Layout className="app">
+		<Layout>
 			<RouterProvider router={router} />
 		</Layout>
 	);

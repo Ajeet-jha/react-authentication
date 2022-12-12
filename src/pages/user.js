@@ -1,5 +1,7 @@
-function User() {
-	return <div>User page</div>;
+import User from '../containers/User';
+
+function UserPage() {
+	return <User />;
 }
 
-export default User;
+export default UserPage;

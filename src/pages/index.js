@@ -1,5 +1,7 @@
-function Home() {
-	return <div>Home page</div>;
+import Home from '../containers/Home';
+
+function index() {
+	return <Home />;
 }
 
-export default Home;
+export default index;
